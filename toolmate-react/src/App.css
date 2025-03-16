@@ -1,0 +1,160 @@
+body, #root {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+/* For WebKit browsers (Chrome, Safari, Edge) */
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.flex-grow {
+  overflow: hidden; /* Hides the scrollbar */
+}
+
+.flex-grow::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar for webkit browsers */
+}
+
+/* Hide scrollbar for Firefox */
+.flex-grow {
+  scrollbar-width: none; /* Hides the scrollbar for Firefox */
+}
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Make the scrollbar thin */
+  scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Professional minimalist font styles */
+.font-sans {
+  font-family: 'Arial', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Georgia', serif;
+}
+
+.font-mono {
+  font-family: 'Courier New', monospace;
+}
+
+.text-xxs {
+  font-size: 7px;
+}
+
+.text-xs {
+  font-size: 10px;
+}
+
+.text-sm {
+  font-size: 12px;
+}
+
+.text-base {
+  font-size: 14px;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+.text-2xl {
+  font-size: 24px;
+}
+
+.text-3xl {
+  font-size: 30px;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-gray-500 {
+  color: #6b7280;
+}
+
+.text-gray-700 {
+  color: #374151;
+}
+
+.text-gray-900 {
+  color: #111827;
+}
+

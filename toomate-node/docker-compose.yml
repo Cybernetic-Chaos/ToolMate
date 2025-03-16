@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis-container
+    ports:
+      - "6379:6379" # Expose Redis on port 6379
+    networks:
+      - redis-network
+
+  node-app:
+    build: .
+    container_name: node-app-container
+    ports:
+      - "3000:3000" # Expose Node.js app on port 3000
+    volumes:
+      - .:/usr/src/app # Mount the local app code into the container
+    environment:
+      - REDIS_HOST=redis # Point to the Redis service by name
+      - REDIS_PORT=6379 # Default Redis port
+    networks:
+      - redis-network
+    depends_on:
+      - redis
+
+networks:
+  redis-network:
+    driver: bridge
